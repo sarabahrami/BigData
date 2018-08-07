@@ -1,0 +1,71 @@
+100
+2.5
+1+1
+2-1
+2+5
+1/2
+1.0/2
+math.pow(2,3)
+res0
+1+2*3+4
+(1+2)*(3+4
+)
+3*0.3048
+val temp: Int=5
+val temp:Int=5
+var tempvar:Int=8
+var temp2:Double=8.234
+temp2=5.6
+var booleanvar:Boolean=true
+booleanvar=false
+val mystring="hello"
+var mystring2="bye"
+mystring2="world"
+mystring2.reverse
+mystring2
+var my_string=23
+var my_string1="hello"
+1>2
+1<2
+1>=2
+1<=2
+2==2
+2==3
+2!=2
+2!=3
+4%2
+4/2
+5%2
+5/2
+6%2==0
+println(mystring2)
+mystring+mystring2
+mystring+" "+mystring2
+mystring*3
+val st="hello"
+st.length()
+st
+val greet=s"Hello ${st}"
+val name="Sara"
+val gretting=s"Hello ${name}"
+val gretting="Hello ${name}"
+val gretting=s"Hello ${name}"
+val gretting=s"Hello $name"
+val greet=f"Hello $name"
+greet
+printf("A String %s, an integer %d, a float %f","hello",2,3.5)
+printf("A float %1.2f", 1.2345)
+printf("A float %1.2f", 12.2345)
+printf("A float %2.2f", 1.2345)
+val st="this is a long string"
+st.charAt(0)
+st.indexOf("a")
+st slice(0,4)
+st slice(8,13)
+st slice(10,14)
+val st="term1 term2 term3"
+st matches "term1"
+st
+st matches "term1 term2 term3"
+st =="term1 term2 term3"
+st contains "term1"
