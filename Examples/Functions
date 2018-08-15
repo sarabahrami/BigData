@@ -1,0 +1,45 @@
+//functions
+// unit is like void in java when your function doesn't return anything
+/*def simple():Unit={
+  println("simple print")
+}
+simple()*/
+
+/*def adder(num1:Int, num2:Int):Int={
+  return num1+num2
+}
+adder(3,4)*/
+
+/*def greetName (name:String):String={
+  return s"Hello $name"
+}
+val fullgreet=greetName("Jose")
+println(fullgreet)*/
+
+
+//check to see if a number is prime
+def isPrime (num:Int):Boolean={
+  if(num==2)
+  return true
+  var counter=2
+  val temp=num/2
+  while (counter<temp){
+    if (num%counter==0){
+        return false
+    }
+      counter +=1
+  }
+  return true
+}
+val num=2
+if (isPrime(num)){
+  println(s"$num is prime")
+}else{
+  println(s"$num is not prim")
+}
+
+/*val numbers=List(1,2,3,7)
+def check(nums:List[Int]):List[Int]={
+  return nums
+}
+println(check(numbers))
