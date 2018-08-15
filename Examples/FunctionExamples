@@ -1,0 +1,90 @@
+//Writes a function that takes in an integer and returns a boolean indicating wether or not it is even.
+
+/*def isEven (num:Int):Boolean={
+  return num%2==0
+}
+isEven(15)*/
+
+// Check for Evens in a List:
+
+/*def checkEveninList (list:List[Int]):Boolean={
+  for (item <- list){
+    if (item%2==0){
+      return true
+    }
+  }
+  return false
+}
+
+val list1=List(1,4,3,7,9)
+val list2=List(3,9,5,7)
+checkEveninList(list1)
+checkEveninList(list2)*/
+//Lucky number seven. Take a list of integers and calculate their sum. However sevens
+//are lucky and they should be counted twice, meaning their value is 14 for the same.
+
+/*def calculateSum(list:List[Int]):Int={
+var sum=0
+  for (item <- list){
+    if(item!=7){
+      sum+=item
+    }else {
+      sum+=14
+    }
+  }
+  return sum
+}
+
+val list1=List(1,4,3,7,9)
+val list2=List(3,9,5,8)
+calculateSum(list1)
+calculateSum(list2)*/
+
+//Given a non-empty list of integers, return true if there is a place to split the list so that the sum of numbers on one side
+//is equal to the sum of the numbers on other side.
+def equalTails(list:List[Int]):Boolean={
+  val n=list.size
+  var counter=0
+  while(counter<n-1){
+    if(list.slice(0,counter+1).sum==list.slice(counter+1,n).sum){
+      return true
+    }
+      counter+=1
+    }
+    return false
+
+  }
+
+val list2=List(1,2,3,4,10)
+equalTails(list2)
+
+// another solution for this problem
+
+/*def equalTails(list:List[Int]):Boolean={
+  var firsthalf=0
+  var seconhalf=0
+  secondhalf=list.sum
+  for (counter <- Range(0,list.size)){
+    firsthalf=firsthalf+list(counter)
+    seconhalf=seconhalf-list(counter)
+    if (firsthalf==seconhalf){
+      return true
+    }
+  }
+  return false
+}*/
+
+
+//Palindrom check. Given a String, return a boolean indicating wether or not the
+//string is spelled the same forwards and backwards
+
+/*def checkPalindrom (str:String):Boolean={
+  if (str.equals(str.reverse)){
+    return true
+  }else {
+    return false
+  }
+}
+
+val str="holloh"
+checkPalindrom(str)*/
