@@ -1,0 +1,30 @@
+if (true) {
+println("I will print if true")
+}
+//
+if (3==3) {
+println("I will print if 3 is equal to 3")
+}
+
+// else and }from if should be in one line
+val x="hellow"
+if (x.endsWith("o")){
+  println("The value of x ends with o")
+}else{
+  println ("the valued of x doesn't end with o")
+}
+//
+val person="Jose"
+if (person== "sammy") {
+  println("welcome sammy")
+}else if (person=="George"){
+  println("welcome George")
+} else {
+  println("what is your name?")
+}
+//
+println((1==1)&&(2==2))
+
+println((1==2)||(2==2))
+
+println(!(1==1))
