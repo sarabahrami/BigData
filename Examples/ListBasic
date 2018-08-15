@@ -1,0 +1,40 @@
+//cleaning the page control+l
+val evens=List(2,4,6,7,8,10)
+List(1,2.2,true)
+evens(0)
+evens(1)
+res0(1)
+evens.head
+\\everything in list but head
+evens.tail
+\\cleaning the screen control+l
+val my_list=List(List(1,2,3),List(4,5,6))
+val my_list2=List(List(3,4),2.2)
+my_list2(0)
+my_list(0)
+my_list(0).head
+my_list
+my_list2
+my_list2(0)
+val my_list=List(("a",1),("b",2),("c",3))
+val my_list=List(3,6,1,8,2)
+
+//m_list. Then press tab to see the list of functions for my_list
+my_list.sorted
+val my_list2=List("hi", "bye", "welcome")
+my_list2.sorted
+my_list.size
+my_list.max
+my_list2.max
+my_list.min
+my_list.sum
+my_list.product
+my_list
+
+my_list.drop(2)
+//res21: List[Int] = List(1, 8, 2)
+
+my_list.takeRight(2)
+//res23: List[Int] = List(8, 2)
+
+my_list slice(0,2)
