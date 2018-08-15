@@ -1,0 +1,15 @@
+var x=0
+while(x<5){
+  println(s"x is currently $x")
+  println("x is still less than 5, adding 1 to s")
+  x=x+1
+}
+// break keyword is not builtin we have to import it
+import util.control.Breaks._
+var y=0
+while (y<10){
+  println(s" y is currently $y")
+  println("y is less than 10 add 1 to y")
+  y=y+1
+  if (y==3) break
+}
