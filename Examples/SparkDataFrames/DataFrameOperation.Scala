@@ -11,7 +11,7 @@ df.printSchema()
 //filter out the data who meets the criteria
 // to use $ scala notation needs to import saprk.implicits
 import spark.implicits._
-filter with scala notation
+//filter with scala notation
 df.filter($"Close">480).show()
 //filter with sql notation
 df.filter("Close> 480").show()
@@ -25,7 +25,7 @@ val result=df.filter($"Close" <480 && $"High"< 480).collect()
 // how many rows have this condition?
 val result=df.filter($"Close" <480 && $"High"< 480).count()
 //in order to filter a row for an specific value == is not working you should use triple = (===)
-df.filter($"High" ===484.40).show() // will not work
+df.filter($"High" ==484.40).show() // will not work
 df.filter($"High" ===484.40).show() // this works
 // in sql you won't have that problem
 df.filter ("High = 484.40").show ()
